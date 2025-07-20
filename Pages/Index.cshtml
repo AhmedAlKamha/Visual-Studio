@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "I Love This Song";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/site.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>One Of My Favorite Songs 🎵</h1>
+        <p>Enjoy this awesome track:</p>
+
+        <div class="video-container">
+            <iframe width="914" height="514" src="https://www.youtube.com/embed/0LwcvjNJTuM?list=RD0LwcvjNJTuM" title="Lynyrd Skynyrd - Free Bird (Official Audio)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        <button id="animateBtn">Click Me for Animation!</button>
+        <div id="animatedBox"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const button = document.getElementById("animateBtn");
+            const box = document.getElementById("animatedBox");
+
+            button.addEventListener("click", function () {
+                box.style.transition = "all 1s ease-in-out";
+                box.style.opacity = 1;
+                box.style.transform = "translateY(-50px) scale(1.2)";
+                setTimeout(() => {
+                    box.style.transform = "translateY(0) scale(1)";
+                    box.style.backgroundColor = "#2196F3";
+                }, 1000);
+            });
+        });
+
+    </script>
+</body>
+</html>
