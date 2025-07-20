@@ -1,0 +1,58 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #FF4081;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+#animateBtn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FF4081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#animatedBox {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    opacity: 0;
+}
